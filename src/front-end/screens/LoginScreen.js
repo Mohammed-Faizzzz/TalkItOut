@@ -37,7 +37,7 @@ const LoginScreen = ({ navigation }) => {
                 // onLoggedIn(jsonRes.token);
                 setIsError(false);
                 setMessage(jsonRes.message);
-                // navigation.navigate('PatientHome',{userEmail: email});
+                navigation.navigate('Home',{userEmail: email});
             }
         } catch (err) {
             console.log(err);
