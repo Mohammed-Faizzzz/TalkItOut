@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { ImageBackground, View, Text, StyleSheet, TouchableOpacity, TextInput, Platform } from 'react-native';
 
-// const API_URL = Platform.OS === 'ios' ? 'http://localhost:3000' : 'http://10.0.2.2:3000';
-
 const API_URL = 'http://192.168.4.168:3000';
 
 const Login = ({ navigation }) => {
@@ -51,8 +49,7 @@ const Login = ({ navigation }) => {
   };
 
   const goToSignUpPage = () => {
-    navigation.navigate('SignupScreen');  //Uncomment this after you're done with testing PatientHome
-    // navigation.navigate('PatientHome');  // Delete this after testing is completed
+    navigation.navigate('Signup');
   };
 
   return (

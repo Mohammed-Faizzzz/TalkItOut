@@ -112,18 +112,18 @@ const Signup = ({navigation}) => {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.header}>Karla Therapy App: Signup</Text>
+      <Text style={styles.header}>TalkItOut: Signup</Text>
       <View style={styles.form}>
         <TextInput
           style={styles.input}
-          placeholder="First Name/Nama Depan"
+          placeholder="First Name"
           placeholderTextColor="#888"
           value={firstName}
           onChangeText={(text) => handleInputChange(text, 'firstName')}
         />
         <TextInput
           style={styles.input}
-          placeholder="Last Name/Nama Belakang"
+          placeholder="Last Name"
           placeholderTextColor="#888"
           value={lastName}
           onChangeText={(text) => handleInputChange(text, 'lastName')}
@@ -137,7 +137,7 @@ const Signup = ({navigation}) => {
             ]}
             onPress={() => handleGenderSelect('male')} 
           >
-            <Text style={styles.genderButtonText}>Male/Laki-Laki</Text>
+            <Text style={styles.genderButtonText}>Male</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[
@@ -146,33 +146,33 @@ const Signup = ({navigation}) => {
             ]}
             onPress={() => handleGenderSelect('female')}
           >
-            <Text style={styles.genderButtonText}>Female/Perempuan</Text>
+            <Text style={styles.genderButtonText}>Female</Text>
           </TouchableOpacity>
         </View>
         <TextInput
           style={styles.input}
-          placeholder="Date of Birth/Tanggal Lahir"
+          placeholder="Date of Birth"
           placeholderTextColor="#888"
           value={dateOfBirth}
           onChangeText={(text) => handleInputChange(text, 'dateOfBirth')}
         />
         <TextInput
           style={styles.input}
-          placeholder="Email Address/Email Alamat"
+          placeholder="Email Address"
           placeholderTextColor="#888"
           value={email}
           onChangeText={(text) => handleInputChange(text, 'email')}
         />
         <TextInput
           style={styles.input}
-          placeholder="Password/Kata Sandi"
+          placeholder="Password"
           placeholderTextColor="#888"
           value={password}
           onChangeText={(text) => handleInputChange(text, 'password')}
         />
         <TextInput
           style={styles.input}
-          placeholder="Confirm Password/Konfirmasi Sandi"
+          placeholder="Confirm Password"
           placeholderTextColor="#888"
           value={confirmPassword}
           onChangeText={(text) => handleInputChange(text, 'confirmPassword')}
@@ -180,14 +180,14 @@ const Signup = ({navigation}) => {
         {/*  */}
         <TextInput
           style={styles.input}
-          placeholder="Phone Number/Nomor Telepon"
+          placeholder="Phone Number"
           placeholderTextColor="#888"
           value={phoneNo}
           onChangeText={(text) => handleInputChange(text, 'phoneNo')}
         />
         <TextInput
           style={styles.input}
-          placeholder="Address/Alamat"
+          placeholder="Address"
           placeholderTextColor="#888"
           value={address}
           onChangeText={(text) => handleInputChange(text, 'address')}
@@ -206,7 +206,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 20,
-    backgroundColor: '#F5F5DC',
+    backgroundColor: '#FEFAE0',
   },
   header: {
     fontSize: 24,
@@ -231,7 +231,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   genderButton: {
-    backgroundColor: '#F5F5DC',
+    backgroundColor: '#FEFAE0',
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderWidth: 1,
@@ -240,7 +240,7 @@ const styles = StyleSheet.create({
     width: '48%',
   },
   selectedGenderButton: {
-    backgroundColor: '#A8DADC',
+    backgroundColor: '#FAEDCD',
     borderWidth: 0,
   },
   genderButtonText: {
@@ -250,7 +250,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   submitButton: {
-    backgroundColor: '#A8DADC',
+    backgroundColor: '#FAEDCD',
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 5,
