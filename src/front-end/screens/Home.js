@@ -54,18 +54,28 @@ const userId = userData.id; //pass it on for progress database access
   
 
   return (
-  <ScrollView style={{ flexGrow: 1, backgroundColor: '#F5F5DC' }}>
-    {/* Navigation Bar */}
-    <TopBar/>
-    {/* Content */}
-    <Text style={styles.header}>Selamat datang di Aplikasi Terapi Karla!</Text>
-    <Text style={styles.subheader}>Apa yang ingin Anda lakukan hari ini?</Text>
-    <NavBar/>
-  </ScrollView>
+    <View style={styles.container}>
+      <ScrollView style={styles.scrollView}>
+        {/* Navigation Bar */}
+        <TopBar />
+        {/* Content */}
+        <Text style={styles.header}>Selamat datang di Aplikasi Terapi Karla!</Text>
+        <Text style={styles.subheader}>Apa yang ingin Anda lakukan hari ini?</Text>
+      </ScrollView>
+      {/* Navigation Bar at the bottom */}
+      <NavBar />
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#F5F5DC',
+  },
+  scrollView: {
+    flex: 1,
+  },
   navbar: {
     flexDirection: 'row',
     alignItems: 'center',
