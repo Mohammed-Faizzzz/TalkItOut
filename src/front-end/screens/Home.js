@@ -56,13 +56,13 @@ const userId = userData.id; //pass it on for progress database access
   return (
     <View style={styles.container}>
       <ScrollView style={styles.scrollView}>
-        {/* Navigation Bar */}
         <TopBar />
         {/* Content */}
+        <View style= {styles.content}>
         <Text style={styles.header}>Selamat datang di Aplikasi Terapi Karla!</Text>
         <Text style={styles.subheader}>Apa yang ingin Anda lakukan hari ini?</Text>
+        </View>
       </ScrollView>
-      {/* Navigation Bar at the bottom */}
       <NavBar />
     </View>
   );
@@ -75,6 +75,9 @@ const styles = StyleSheet.create({
   },
   scrollView: {
     flex: 1,
+  },
+  content: {
+    marginTop: 20
   },
   navbar: {
     flexDirection: 'row',
