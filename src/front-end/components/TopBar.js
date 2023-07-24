@@ -11,23 +11,10 @@ const TopBar = () => {
     >
       {/* Company Logo */}
       <Image
-        source={require('../assets/company_logo.png')}
-        style={{ width: 70, height: 70, marginRight: 8, marginLeft: 15 }}
+        source={require('../assets/icon.jpeg')}
+        style={{ width: 140, height: 35, marginRight: 8, marginLeft: 10 }}
       />
-
-      {/* Clickable Buttons */}
-      <View style= {styles.buttonContainer}>
-      <TouchableOpacity onPress={() => navigation.navigate('MyProgress', {userId: userId, userEmail: userEmail})} style = {styles.button}>
-        <Text style= {{fontWeight: 'bold'}}>My Progress</Text>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('MyProfile', {userData: userData, userId: userId, userEmail: userEmail})} style = {styles.button}>
-        <Text style= {{fontWeight: 'bold'}}>My Profile</Text>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('SettingsPage')} style = {styles.button}>
-        <Text style= {{fontWeight: 'bold'}}>Settings</Text>
-      </TouchableOpacity>
       </View>
-    </View>
     );
 }
 
@@ -37,7 +24,7 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'space-between',
       paddingHorizontal: 16,
-      backgroundColor: '#FAEDCD',
+      backgroundColor: '#FEF4E8',
     // backgroundColor: '#FEFAE0',
       borderBottomWidth: 1,
       borderBottomColor: '#ccc',
